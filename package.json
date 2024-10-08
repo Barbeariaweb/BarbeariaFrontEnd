@@ -1,5 +1,5 @@
 {
-  "homepage": "https://iuripejara.github.io/BarbeariaFrontEnd",
+  "homepage": "https://barbeariaweb.github.io/BarbeariaFrontEnd",
   "name": "barbeariafrontend",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm rum build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d b"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
