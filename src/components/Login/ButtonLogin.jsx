@@ -20,6 +20,7 @@ export default function Button({}){
                         pathname === "/new"
                         ? "w-30 border-b-2 border-red-500 " 
                         :"border-red-500"
+                        
                     }
                 `}
             >Criar nova conta</Link>
