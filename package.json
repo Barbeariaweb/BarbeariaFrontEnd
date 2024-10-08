@@ -1,5 +1,5 @@
 {
-  "homepage": "https://barbeariaweb.github.io/BarbeariaFrontEnd",
+
   "name": "barbeariafrontend",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm rum build",
-    "deploy": "gh-pages -d b"
+    "preview": "vite preview"
+
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
