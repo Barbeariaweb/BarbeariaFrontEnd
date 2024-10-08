@@ -6,12 +6,11 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage:{
-        "img-purple":"url('telaDelogin1.jpg')",
-        "img-novo":"url('telaDeLogin2.jpg')"
+      backgroundImage: {
+        "img-purple": "url('/telaDelogin1.jpg')", 
+        "img-novo": "url('/telaDeLogin2.jpg')"    
       }
     },
   },
   plugins: [],
 }
-
