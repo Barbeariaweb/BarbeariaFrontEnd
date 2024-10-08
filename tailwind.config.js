@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        "img-purple":"url('telaDelogin1.jpg')"
+        "img-purple":"url('telaDelogin1.jpg')",
+        "img-novo":"url('telaDeLogin2.jpg')"
       }
     },
   },
