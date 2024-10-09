@@ -5,7 +5,7 @@ import ImagsLogin from "../../components/Login/ImagsLogin";
 
 export default function Login() {
   return (
-    <div className=" grid grid-cols-2 h-screen">
+    <div className=" grid grid-cols-1 sm:grid-cols-2 h-screen">
       <ImagsLogin />
       <div className="flex justify-center items-center">
         <div className="py-10 px-10 w-full flex flex-col items-center">

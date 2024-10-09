@@ -3,7 +3,7 @@ export default function CreateUser(){
     return(
         <>
             <form className="flex flex-col gap-4 m-5">
-                <div className="flex  gap-9">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-1 w-full">
                         <label className="text-zinc-50 text-lg" htmlFor="username">
                             Username:
@@ -28,8 +28,8 @@ export default function CreateUser(){
                     </div>   
                 </div>
 
-                <div className="flex  gap-6">
-                    <div className="flex flex-col gap-1 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="flex flex-col  gap-1 w-full">
                         <label className="text-zinc-50 text-lg" htmlFor="Password">
                             Senha:
                         </label>
