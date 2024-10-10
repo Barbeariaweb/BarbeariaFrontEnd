@@ -8,7 +8,8 @@ export default {
     extend: {
       backgroundImage:{
         "img-purple":"url('/telaDelogin1.jpg')",
-        "img-novo":"url('/telaDeLogin2.jpg')"
+        "img-novo":"url('/telaDeLogin2.jpg')",
+        "img-home":"url('/homen.jpg')"
       }
     },
   },
