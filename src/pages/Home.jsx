@@ -4,11 +4,10 @@ import Logo from "../components/header/Logo";
 
 export default function Home() {
     return (
-        <div className=" w-full bg-cover bg-center h-screen" style={{background:"url('/homen.jpg')"}}>
+        <div className="bg-img-home w-full bg-cover bg-center h-screen">
             <header
-                className="flex justify-between items-center m-11 "
+                className="flex justify-between items-center m-11 bg-img-home "
             >
-                
                 <Logo/>
                 <Info/>
             </header>
