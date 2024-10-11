@@ -1,11 +1,9 @@
-import Botao from "../Botao";
 
-export default function Barbeiros ({titulo,texto, className,classNameTexto}) {
+
+export default function Barbeiros ({titulo,texto, className,classNameTexto ,classNameDiv}) {
     return(
         <div 
-            className="
-                mt-32 mx-28
-            "
+            className={classNameDiv}
         >
         <h2 className={className} 
             >
@@ -17,11 +15,7 @@ export default function Barbeiros ({titulo,texto, className,classNameTexto}) {
                 >
                 {texto}
             </p>
-        <Botao name="Conheça os teus barbeiros"
-            className="
-                bg-red-600 text-zinc-50 p-2 rounded-md
-            "
-        />
+        
     </div>
     )
 }
