@@ -13,7 +13,7 @@ export default function Info(){
                 </div>
 
                 <div className="flex gap-3">
-                    <img src="map.svg" alt="Localizacao"/>
+                    <img src="map.svg" alt="Localizacao" className="text-zinc-50"/>
                     <p><a href="https://maps.app.goo.gl/4eMHsGHJxseGA7YLA" target="_blank"
                         className="text-zinc-50 text-xl"
                     >

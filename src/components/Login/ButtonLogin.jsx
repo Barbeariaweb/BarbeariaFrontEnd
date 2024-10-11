@@ -9,7 +9,7 @@ export default function Button(){
                 className={`p-3  w-30 
                     ${
                         pathname === "/"
-                        ? "w-30 border-b-2 border-red-400"
+                        ? "w-30 border-b-2 border-red-500"
                         : "border-red-500"
                     }
                 `}

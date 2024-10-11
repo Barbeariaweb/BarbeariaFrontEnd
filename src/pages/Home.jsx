@@ -1,9 +1,9 @@
-import Index from "../items";
+import TopoIndex from "../items/TopoIndex";
 
 export default function Home() {
     return (
         <div>
-            <Index/>
+            <TopoIndex/>
         </div>
     )
 }
