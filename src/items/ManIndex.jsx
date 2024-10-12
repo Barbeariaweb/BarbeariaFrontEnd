@@ -14,7 +14,7 @@ export default function ManINdex (){
 
                 <Barbeiros
                         classNameDiv="mx-28 p-4"
-                        className="text-zinc-950 text-2xl mb-5 "
+                        className="text-zinc-50 text-2xl mb-5 "
                         titulo="Agende seu corte"
                         texto="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi rem nihil amet reiciendis eaque assumenda voluptate accusantium inventore, quae sint, possimus, quam veniam facilis "
                         classNameTexto="w-96 text-zinc-50"
