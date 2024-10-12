@@ -1,7 +1,7 @@
 import Botao from "../components/Botao";
 import Barbeiros from "../components/header/Barbeiros";
 
-export default function ManINdex (){
+export default function ManIndex(){
     return(
         <div className="flex items-center justify-between mt-28 mb-28 space-x-6">
 
