@@ -7,7 +7,7 @@ export default function MeioIndex(){
 
             <div className="object-fill">
                 <img src="image2.jpg" alt="barbeiro contando cabelo"
-                    className="w-96 h-auto rounded-r-md mx-2"
+                    className="w-96 h-auto rounded-r-md "
                 />
             </div>
             <div className="flex flex-col justify-center   space-y-4">
@@ -27,7 +27,7 @@ export default function MeioIndex(){
             
             <div className="object-fill">
                 <img src="image2.jpg" alt="barbeiro contando cabelo"
-                    className="w-96 h-auto rounded-tl-md mx-1 "
+                    className="w-96 h-auto rounded-tl-md  "
                 />
             </div>
         </div>
