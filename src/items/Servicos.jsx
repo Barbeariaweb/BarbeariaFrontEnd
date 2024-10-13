@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Botao from "../components/Botao";
+import ServicoItem from "../components/ServicoItem/ServicoItem";
 
 export default function Servicos (){
-    const [clickDetails, setClickDetails] = useState(false)
-    const [coloracao,setColoracao] = useState (false)
-    const [tratamento,setTratamento] = useState(false)
+    const [selectedService, setSelectedService ] = useState (null)
+
+    const toggleService = (servece) => {
+        setSelectedService(prevServece => prevServece === servece ? null : servece)
+    }
     return (
         <div className="mt-28 bg-red-500 h-auto flex  px-28 py-10">
             
@@ -18,157 +21,84 @@ export default function Servicos (){
                                 text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900 text-xl
                                 w-52 flex p-2 mt-6 rounded-md shadow-lg
                             "
-                                onClick={()=> setClickDetails(!clickDetails)}
+                                onClick={()=> toggleService('Corte')}
                         />
                         <Botao 
-                            name="Coloração (2)"
+                            name="Corte Homem (2)"
                             className="
                                 text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900  text-xl
                                 w-52 flex p-2 mt-6 rounded-md shadow-lg
                             " 
-                                onClick = {()=>setColoracao (!coloracao)}
+                                onClick = {()=>toggleService ('CorteHomem')}
                             />
                             
                         <Botao 
-                            name="Tratamento Cabelo & Couro Cabeludo (3)"
+                            name="Tratamento Cabelo & Couro Cabeludo (1)"
                             className="
                                 text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900  text-xl
                                 flex p-2 mt-6 rounded-md  shadow-xl
                             " 
-                                onClick={()=>setTratamento(!tratamento)}
+                                onClick={()=>toggleService('Tratamento')}
                             />
                     </div>
                 </div>
-                {clickDetails && (
+                {selectedService === 'Corte' && (
                     <div className="grid grid-cols-2  xl:ml-72 lg:ml-60  md:ml-48 sm:ml-24">
 
-                        <div className="mt-16 text-2xl text-zinc-50">
-                            <h1 className="my-3">Corte</h1>
-                            <span>45 mins Mostrar Detalhes</span>
-                            <hr className="my-3 border-zinc-800" />
-                        </div>
-                        <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                            <span className="ml-24 ">15€</span>
-                            <Botao 
-                                name="Selecionar"
-                                className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                            />
-                        </div>
+                        <ServicoItem 
+                            service="Corte"
+                            details="45 mins Mostrar Detalhes"
+                            value="15€"
+                        />
 
-                        <div className="mt-16 text-2xl text-zinc-50">
-                            <h1 className="my-3">Corte</h1>
-                            <span>45 mins Mostrar Detalhes</span>
-                            <hr className="my-3 border-zinc-800" />
-                        </div>
-                        <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                            <span className="ml-24 ">15€</span>
-                            <Botao 
-                                name="Selecionar"
-                                className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                            />
-                        </div>
+                        <ServicoItem 
+                            service="Corte"
+                            details="45 mins Mostrar Detalhes"
+                            value="15€"
+                        />
 
-                        <div className="mt-16 text-2xl text-zinc-50">
-                            <h1 className="my-3">Corte</h1>
-                            <span>45 mins Mostrar Detalhes</span>
-                            <hr className="my-3 border-zinc-800" />
-                        </div>
-                        <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                            <span className="ml-24 ">15€</span>
-                            <Botao 
-                                name="Selecionar"
-                                className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                            />
-                        </div>
+                        <ServicoItem 
+                            service="Corte"
+                            details="45 mins Mostrar Detalhes"
+                            value="15€"
+                        />
+                       
+                    
                     </div>
                    
                 )}
 
-                {coloracao && (
+                {selectedService === 'CorteHomem' && (
                     <div className="grid grid-cols-2  xl:ml-72 lg:ml-60  md:ml-48 sm:ml-24">
 
-                        <div className="mt-16 text-2xl text-zinc-50">
-                            <h1 className="my-3">Corte</h1>
-                            <span>45 mins Mostrar Detalhes</span>
-                            <hr className="my-3 border-zinc-800" />
-                        </div>
-                        <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                            <span className="ml-24 ">15€</span>
-                            <Botao 
-                                name="Selecionar"
-                                className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                            />
-                        </div>
+                        <ServicoItem 
+                            service="Corte de Cabelo + Barba"
+                            details="1 hr 15 mins "
+                            value="17€"
+                        />
 
-                        <div className="mt-16 text-2xl text-zinc-50">
-                            <h1 className="my-3">Corte</h1>
-                            <span>45 mins Mostrar Detalhes</span>
-                            <hr className="my-3 border-zinc-800" />
-                        </div>
-                        <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                            <span className="ml-24 ">15€</span>
-                            <Botao 
-                                name="Selecionar"
-                                className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                            />
-                        </div>
+                        <ServicoItem 
+                            service="Corte de Cabelo + Barba + Sobrancelha"
+                            details="1 hr 30 mins"
+                            value="20€"
+                        />
+
                         
-                        <div className="mt-16 text-2xl text-zinc-50">
-                            <h1 className="my-3">Corte</h1>
-                            <span>45 mins Mostrar Detalhes</span>
-                            <hr className="my-3 border-zinc-800" />
-                        </div>
-                        <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                            <span className="ml-24 ">15€</span>
-                            <Botao 
-                                name="Selecionar"
-                                className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                            />
-                        </div>
+                       
                     </div>
                 )}
 
-                {tratamento && (
-                    <div className="grid grid-cols-2  xl:ml-72 lg:ml-60  md:ml-48 sm:ml-24">
+                {selectedService === 'Tratamento' &&(
+                <div className="grid grid-cols-2  xl:ml-72 lg:ml-60  md:ml-48 sm:ml-24">
 
-                    <div className="mt-16 text-2xl text-zinc-50">
-                        <h1 className="my-3">Corte</h1>
-                        <span>45 mins Mostrar Detalhes</span>
-                        <hr className="my-3 border-zinc-800" />
-                    </div>
-                    <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                        <span className="ml-24 ">15€</span>
-                        <Botao 
-                            name="Selecionar"
-                            className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                        />
-                    </div>
+                    <ServicoItem 
+                        service="Hidratação Capilar"
+                        details="15 mins"
+                        value="10€"
+                    />
 
-                    <div className="mt-16 text-2xl text-zinc-50">
-                        <h1 className="my-3">Corte</h1>
-                        <span>45 mins Mostrar Detalhes</span>
-                        <hr className="my-3 border-zinc-800" />
-                    </div>
-                    <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                        <span className="ml-24 ">15€</span>
-                        <Botao 
-                            name="Selecionar"
-                            className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                        />
-                    </div>
                     
-                    <div className="mt-16 text-2xl text-zinc-50">
-                        <h1 className="my-3">Corte</h1>
-                        <span>45 mins Mostrar Detalhes</span>
-                        <hr className="my-3 border-zinc-800" />
-                    </div>
-                    <div className="mt-16 text-2xl flex justify-around w-96 items-start text-zinc-50   ">
-                        <span className="ml-24 ">15€</span>
-                        <Botao 
-                            name="Selecionar"
-                            className="bg-zinc-900  p-2 rounded-md ml-14 w-48"
-                        />
-                    </div>
+                    
                 </div>
                 )}
                 
