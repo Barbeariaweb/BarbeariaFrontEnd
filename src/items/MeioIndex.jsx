@@ -1,15 +1,17 @@
 import Botao from "../components/Botao";
 import Barbeiros from "../components/header/Barbeiros";
+import Imagens from "../components/Comentarios/Imgens";
 
 export default function MeioIndex(){
     return(
         <div className="flex items-center justify-between mt-28 mb-28 space-x-6">
 
-            <div className="object-fill">
-                <img src="image2.jpg" alt="barbeiro contando cabelo"
-                    className="w-96 h-auto rounded-r-md "
-                />
-            </div>
+            <Imagens
+                src="image1.jpg"
+                alt="barbeiro contando cabelo"
+                className="w-96 h-auto rounded-r-md"
+            />
+
             <div className="flex flex-col justify-center   space-y-4">
 
                 <Barbeiros
@@ -24,12 +26,11 @@ export default function MeioIndex(){
                     />
             </div>
                 
-            
-            <div className="object-fill">
-                <img src="image2.jpg" alt="barbeiro contando cabelo"
-                    className="w-96 h-auto rounded-tl-md  "
-                />
-            </div>
+            <Imagens
+                src="image2.jpg"
+                alt="barbeiro contando cabelo"
+                className="w-96 h-auto rounded-l-md"
+            />
         </div>
     )
 }
