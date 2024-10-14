@@ -5,7 +5,7 @@ import Logo from "../components/header/Logo";
 
 export default function Index() {
     return (
-        <div className="relative bg-img-home w-full bg-cover bg-center h-[34rem]">
+        <div id="home" className="relative bg-img-home w-full bg-cover bg-center h-[34rem]">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black h-full">
                 <header
                     className="relative  z-0 flex justify-between items-center pt-11"

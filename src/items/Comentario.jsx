@@ -4,7 +4,7 @@ import InputComentario from "../components/Comentarios/Input";
 
 export default function Comentario () {
     return (
-        <div className="mt-28 ml-28 mb-28">
+        <div id="comentario" className="mt-28 ml-28 mb-28 md">
             <h1 className="text-3xl text-zinc-50 pb-5">Comentário</h1>
             <div className="flex">
                 
