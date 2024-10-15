@@ -9,7 +9,7 @@ export default function Servicos (){
         setSelectedService(prevServece => prevServece === servece ? null : servece)
     }
     return (
-        <div id="Servicos" className="mt-28 bg-red-500 h-auto flex  px-28 py-10">
+        <div id="Servicos" className=" bg-red-500 h-auto flex  px-28 py-10">
             
                 <div className="  text-4xl text-zinc-50">
                     <h1>Procurar serviço</h1>

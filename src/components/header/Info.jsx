@@ -2,11 +2,11 @@ import Botao from "../Botao";
 
 export default function Info(){
     return(
-        <div className="flex justify-between items-center gap-5">
+        <div className="hidden md:flex justify-between items-center gap-5">
                 <div className="flex gap-2 mr-16">
                     <img src="tel.svg" alt="telefone"/>
                     <p><a href="tel:+315999999999"
-                        className="text-zinc-50 text-xl"
+                        className="text-zinc-50 text-xl "
                     >
                         999 999 999
                     </a></p>

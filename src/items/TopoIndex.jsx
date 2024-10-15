@@ -5,24 +5,40 @@ import Logo from "../components/header/Logo";
 
 export default function Index() {
     return (
-        <div id="home" className="relative bg-img-home w-full bg-cover bg-center h-[34rem]">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black h-full">
+        <div 
+            id="home" 
+            className="
+                relative bg-img-home w-full bg-cover bg-center h-[34rem]
+                
+            ">
+                
+            <div 
+                className="
+                    absolute  bg-gradient-to-b from-transparent to-black h-full
+                    md:inset-0
+                ">
                 <header
-                    className="relative  z-0 flex justify-between items-center pt-11"
+                    className="
+                        relative z-0 pt-11 md:flex md:justify-between md:items-center 
+                    "
                 >
                     <Logo/>
                     <Info/>
                 </header>
+                <div className="">
+                    
+                </div>
                <Barbeiros 
-                    classNameDiv="mt-32 mx-28"
+                    classNameDiv="mt-32 mx-10 md:mx-28"
                     titulo="Babearia Lotos"
-                    texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vel igendi, at error reiciendis tempora"
+                    texto="Descubra o corte perfeito para você. Nossos barbeiros estão prontos para atender suas necessidades."
                     className="text-zinc-50 text-xl mb-5 "
                     classNameTexto=" w-80 text-slate-50 mb-5"
                />
                <Botao name="Conheça os teus barbeiros"
                 className="
-                    bg-red-600 text-zinc-50 p-2 rounded-md mx-28
+                    bg-red-600  text-zinc-50 p-2 rounded-md w-72 mx-10
+                    md:mx-28
                 "
                 />
             </div>
