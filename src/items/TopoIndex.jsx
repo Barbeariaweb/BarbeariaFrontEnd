@@ -29,7 +29,7 @@ export default function Index() {
                     
                 </div>
                <Barbeiros 
-                    classNameDiv="mt-32 mx-10 md:mx-28"
+                    classNameDiv="mt-32 mx-10 lg:mx-28"
                     titulo="Babearia Lotos"
                     texto="Descubra o corte perfeito para você. Nossos barbeiros estão prontos para atender suas necessidades."
                     className="text-zinc-50 text-xl mb-5 "
@@ -37,8 +37,8 @@ export default function Index() {
                />
                <Botao name="Conheça os teus barbeiros"
                 className="
-                    bg-red-600  text-zinc-50 p-2 rounded-md w-72 mx-10
-                    md:mx-28
+                    bg-red-600  text-zinc-50 p-2 rounded-md mx-10
+                    lg:mx-28
                 "
                 />
             </div>

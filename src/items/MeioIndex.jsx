@@ -15,7 +15,7 @@ export default function MeioIndex(){
                 alt="barbeiro contando cabelo"
                 className="
                     rounded-md w-full max-w-xs mx-auto  h-auto 
-                    md:rounded-none md:rounded-r-md md:w-96
+                    md:rounded-none md:rounded-r-md md:w-60 lg:w-96
                 "
             />
 
@@ -38,9 +38,10 @@ export default function MeioIndex(){
                     />
                     <Botao name="Agende seu corte"
                         className="
-                            bg-red-600 text-zinc-50 p-2 rounded-md  w-full max-w-xs mx-auto
-                            md:
+                            bg-red-600 text-zinc-50 p-2 rounded-md w-full max-w-xs mx-auto
+                            md:mx-11 lg:mx-[440px] 
                         "
+                        
                     />
             </div>
                 
@@ -49,7 +50,7 @@ export default function MeioIndex(){
                 alt="barbeiro contando cabelo"
                 className="
                     rounded-md w-full max-w-xs mx-auto h-auto 
-                    md:rounded-none md:rounded-l-md md:w-96
+                    md:rounded-none md:rounded-l-md md:w-60 lg:w-96
                 "
             />
         </div>

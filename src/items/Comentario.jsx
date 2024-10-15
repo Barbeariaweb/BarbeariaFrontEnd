@@ -4,8 +4,8 @@ import InputComentario from "../components/Comentarios/Input";
 
 export default function Comentario () {
     return (
-        <div id="comentario" className="mt-28 ml-28 mb-28 md">
-            <h1 className="text-3xl text-zinc-50 pb-5">Comentário</h1>
+        <div id="comentario" className="mt-28 mx-10 mb-28 md md:ml-28">
+            <h1 className="text-zinc-50  text-4xl  md:text-3xl  pb-5">Comentário</h1>
             <div className="flex">
                 
                 <Imagens
@@ -17,7 +17,7 @@ export default function Comentario () {
                 <div />
                 <Botao 
                     name="Comentar"
-                    className="mt-14 -ml-48 bg-red-500 p-2 rounded-md w-48"
+                    className="mt-14 -ml-20 md:-ml-48 bg-red-500 p-2 rounded-md md:w-48"
                 />
             </div>
         </div>

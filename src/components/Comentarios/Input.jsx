@@ -6,8 +6,8 @@ export default function InputComentario(){
                 id="comentar"
                 placeholder="Adicione um comentário"
                 className="
-                    bg-[#171616] border-b-2 w-1/2 ml-2 h-10
-                    focus:border-red-400 focus:outline-none 
+                    bg-[#171616] border-b-2 ml-2 h-10 w-3/4 md:w-1/2
+                    focus:border-red-400 focus:outline-none text-zinc-50
                 "
             />
         </>
