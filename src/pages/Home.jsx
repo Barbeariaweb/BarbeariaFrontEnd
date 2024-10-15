@@ -7,11 +7,11 @@ import TopoIndex from "../items/TopoIndex";
 export default function Home() {
     return (
         <div>
-            <TopoIndex/>
+            <TopoIndex />
             <MeioIndex />
-            <Servicos/>
-            <Comentario/>
+            <Servicos />
+            <Comentario />
             <Footer />
         </div>
-    )
+    );
 }

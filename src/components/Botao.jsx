@@ -1,12 +1,9 @@
-export default function Botao({name,className ,onClick}){
+export default function Botao({ name, className, onClick }) {
     return (
         <>
-            <button
-                className={className}
-                onClick={onClick}
-            >
+            <button className={className} onClick={onClick}>
                 {name}
             </button>
         </>
-    )
+    );
 }

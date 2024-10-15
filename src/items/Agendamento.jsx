@@ -1,7 +1,7 @@
-export default function Agendamento (){
-    return(
+export default function Agendamento() {
+    return (
         <>
             <h1>teste</h1>
         </>
-    )
+    );
 }

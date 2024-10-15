@@ -1,8 +1,8 @@
-export default function InputComentario(){
+export default function InputComentario() {
     return (
         <>
-            <input 
-                type="text" 
+            <input
+                type="text"
                 id="comentar"
                 placeholder="Adicione um comentário"
                 className="
@@ -11,5 +11,5 @@ export default function InputComentario(){
                 "
             />
         </>
-    )
+    );
 }
