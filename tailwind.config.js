@@ -7,6 +7,7 @@ export default {
                 "img-purple": "url('/telaDelogin1.jpg')",
                 "img-novo": "url('/telaDeLogin2.jpg')",
                 "img-home": "url('/homen.jpg')",
+                "img-home2": "url('/homen2.jpg')",
             },
         },
     },

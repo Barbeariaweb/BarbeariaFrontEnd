@@ -4,6 +4,9 @@ import CreateUser from "./items/CreateUser";
 import MinhaConta from "./items/MinhaConta";
 import Home from "./pages/Home";
 import Agendamento from "./items/Agendamento";
+import BarbeirosIndex from "./pages/Verbarbeiros";
+import Verbarbeiros from "./pages/Verbarbeiros";
+
 
 const router = createBrowserRouter([
     {
@@ -21,15 +24,21 @@ const router = createBrowserRouter([
         ],
     },
     {
-        path: "/home",
-        element: <Home />, // Rota para a Home
+        path: "/home", // Rota para a Home
+        element: <Home />,
         children: [
             {
                 path: "agendamento", // Sub-rota para agendamentos
                 element: <Agendamento />,
             },
+            
         ],
     },
+    {
+        path: "/Barbeiros", // Sub-rota para Barbeiros dentro de /home
+        element: <Verbarbeiros />,
+    },
+
 ]);
 
 export default router;
