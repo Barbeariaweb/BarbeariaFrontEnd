@@ -2,7 +2,7 @@ import Botao from "../components/Botao";
 import Imagens from "../components/Comentarios/Imgens";
 import InputComentario from "../components/Comentarios/Input";
 
-export default function Comentario() {
+export default function Comentarios() {
     return (
         <div id="comentario" className="mt-28 mx-10 mb-28 md md:ml-28">
             <h1 className="text-zinc-50  text-4xl  md:text-3xl  pb-5">

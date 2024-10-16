@@ -1,4 +1,4 @@
-import Comentario from "../items/comentario";
+import Comentario from "../items/Comentarios";
 import Footer from "../items/Footer";
 import MeioIndex from "../items/MeioIndex";
 import Servicos from "../items/Servicos";
