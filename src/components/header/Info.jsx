@@ -2,8 +2,8 @@ import Botao from "../Botao";
 
 export default function Info() {
     return (
-        <div className="hidden lg:flex justify-between items-center gap-4 lg:gap-5">
-            <div className="flex lg:gap-2 lg:mr-16">
+        <div className="hidden  justify-between items-center gap-4 md:flex md:gap-0 lg:gap-5">
+            <div className="flex md:gap-2 md:mr-2 lg:gap-3 lg:mr-3">
                 <img src="tel.svg" alt="telefone" />
                 <p>
                     <a
@@ -15,7 +15,7 @@ export default function Info() {
                 </p>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex gap-2 ">
                 <img src="map.svg" alt="Localizacao" className="text-zinc-50" />
                 <p>
                     <a
@@ -27,7 +27,7 @@ export default function Info() {
                     </a>
                 </p>
             </div>
-            <div className="flex mx-5 lg:mx-16">
+            <div className="flex mx-5 md:mx-5 lg:mr-12">
                 <Botao
                     name="agendamento"
                     className="

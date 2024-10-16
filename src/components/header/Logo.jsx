@@ -32,7 +32,7 @@ export default function Logo() {
             {lateralNave && (
                 <div className="fixed right-0 top-0 h-full w-64 bg-zinc-800 p-5 shadow-lg ">
                     <button
-                        className="mb-4 text-right text-4xl"
+                        className="mb-4 text-right text-4xl text-zinc-50 "
                         onClick={clickNave}
                     >
                         &times;
