@@ -25,7 +25,7 @@ export default function Servicos() {
                     <Botao
                         name="Corte (7) "
                         className="
-                                text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900 text-xl
+                                text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900 text-xl hover:bg-red-600
                                 w-52 flex p-2 mt-6 rounded-md shadow-lg
                             "
                         onClick={() => toggleService("Corte")}
@@ -33,7 +33,7 @@ export default function Servicos() {
                     <Botao
                         name="Corte Homem (2)"
                         className="
-                                text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900  text-xl
+                                text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900  text-xl hover:bg-red-600
                                 w-52 flex p-2 mt-6 rounded-md shadow-lg
                             "
                         onClick={() => toggleService("CorteHomem")}
@@ -42,7 +42,7 @@ export default function Servicos() {
                     <Botao
                         name="Tratamento Cabelo & Couro Cabeludo (1)"
                         className="
-                                text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900  text-xl
+                                text-zinc-50 focus:bg-zinc-200 focus:text-zinc-900  text-xl hover:bg-red-600
                                 flex p-2 mt-6 rounded-md  shadow-xl
                             "
                         onClick={() => toggleService("Tratamento")}

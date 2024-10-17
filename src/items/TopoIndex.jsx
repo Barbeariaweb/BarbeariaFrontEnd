@@ -40,7 +40,7 @@ export default function Index() {
                 <Link
                     to={ pathname === "/Barbeiros" ? "/home" :"/Barbeiros"}
                     className="
-                    bg-red-600  text-zinc-50 p-2 rounded-md mx-10
+                    bg-red-600 hover:bg-red-500  text-zinc-50 p-2 rounded-md mx-10
                     lg:mx-28
                 "
                 >

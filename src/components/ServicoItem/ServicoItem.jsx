@@ -11,12 +11,13 @@ export default function ServicoItem({ service, details, value }) {
             <div
                 className="
                 text-zinc-50 mt-16 flex flex-col justify-around w-full
-                lg:text-2xl  lg:flex-row  lg:w-96  lg:items-start   "
+                    lg:text-2xl  lg:flex-row  lg:w-96  lg:items-start   "
             >
                 <span className="ml-20 ">{value}</span>
                 <Botao
                     name="Selecionar"
-                    className=" bg-zinc-900 mt-6 ml-3 p-2 rounded-lg lg:ml-1 lg:w-40 "
+                    className=" bg-zinc-900 hover:bg-zinc-800 
+                        mt-6 ml-3 p-2 rounded-lg lg:ml-1 lg:w-40 hover:translate-x-1 "
                 />
             </div>
         </>
