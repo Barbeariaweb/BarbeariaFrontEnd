@@ -1,6 +1,7 @@
 import Botao from "../components/Botao";
 import Barbeiros from "../components/header/Barbeiros";
 import Imagens from "../components/Comentarios/Imgens";
+import { Link } from "react-router-dom";
 
 export default function MeioIndex() {
     return (
@@ -37,13 +38,13 @@ export default function MeioIndex() {
                     md:w-96 md:max-w-full md:mx-0 md:text-lg lg:text-xl
                 "
                 />
-                <Botao
-                name="Agende seu corte"
+                <Link
+                to="/agendamento"
                 className="
                     bg-red-600 hover:bg-red-500 text-zinc-50 p-2 rounded-md w-full max-w-xs mx-auto
-                    md:mx-1 lg:mx-[5%] xl:mx-[5%]
+                    md:mx-7 lg:mx-[5%] xl:mx-[8%] text-center
                 "
-                />
+                >Agende seu corte</Link>
             </div>
 
             <Imagens

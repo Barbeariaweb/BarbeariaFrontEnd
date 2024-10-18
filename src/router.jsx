@@ -3,7 +3,7 @@ import Login from "./pages/Login/Login";
 import CreateUser from "./items/CreateUser";
 import MinhaConta from "./items/MinhaConta";
 import Home from "./pages/Home";
-import Agendamento from "./items/Agendamento";
+import Agendamento from "./pages/Agendamento";
 import BarbeirosIndex from "./pages/Verbarbeiros";
 import Verbarbeiros from "./pages/Verbarbeiros";
 
@@ -26,17 +26,14 @@ const router = createBrowserRouter([
     {
         path: "/home", // Rota para a Home
         element: <Home />,
-        children: [
-            {
-                path: "agendamento", // Sub-rota para agendamentos
-                element: <Agendamento />,
-            },
-            
-        ],
     },
     {
         path: "/Barbeiros", // Sub-rota para Barbeiros dentro de /home
         element: <Verbarbeiros />,
+    },
+    {
+        path: "/agendamento", // Sub-rota para agendamentos
+        element: <Agendamento />,
     },
 
 ]);
