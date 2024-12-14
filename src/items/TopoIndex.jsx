@@ -14,7 +14,7 @@ export default function Index() {
                 relative  w-full bg-cover bg-center h-[34rem]
                 ${pathname === "/Barbeiros" ?"bg-img-home2" :"bg-img-home"}
             `}
-        >
+            >
             <div
                 className="
                     absolute  bg-gradient-to-b from-transparent to-black h-full
